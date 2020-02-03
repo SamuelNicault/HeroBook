@@ -48,9 +48,9 @@ int main(){
     printf( "So now, I'll call you %s !\n", nom );
 
     printf("You can now travel, chose a pass [1-7]\n");
-
+    scanf("%d", &destination);
     while(PV>=0){
-        scanf("%d", &destination);
+        
 
         switch (destination){
 
