@@ -3,7 +3,6 @@
 #include <stdlib.h>
 #include <time.h>
 
-
 typedef struct Chapter{
     char desc[120];
     int gold;
@@ -32,12 +31,14 @@ int main(){
 
     scanf( "%19s", nom ); /* le nom de tableau représentant l'adresse de son premier élément pas besoin d'utiliser l'opérateur d'adressage & */
     printf( "So now, I'll call you %s !\n", nom );
-    
+
     printf("You can now travell to one of three possibilities [so choose 1, 2 or 3]\n");
+
     scanf("%d", &destination);
     switch (destination){
 
     	case 1 :
+
     		travel(&chapter1);
     	break;
 
@@ -52,3 +53,4 @@ int main(){
     }
     return 0;
 }
+
